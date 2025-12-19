@@ -27,7 +27,6 @@
       line-height:1.7;
     }
 
-    /* HEADER - SAMA UNTUK SEMUA HALAMAN */
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -73,7 +72,6 @@
       color: coral;
     }
 
-    /* MAIN */
     main {
       padding-top: 110px;
       max-width: 1100px;
@@ -98,7 +96,6 @@
       margin: 0 auto 60px;
     }
 
-    /* ITEM */
     .kuliner-item {
       display: flex;
       align-items: flex-start;
@@ -128,7 +125,6 @@
       border-radius: 8px;
     }
 
-    /* TEXT AREA */
     .keterangan { 
       width: 60%; 
     }
@@ -173,7 +169,6 @@
       color: dimgray;
     }
 
-    /* TIPS SECTION */
     .tips-section {
       margin-top: 100px;
       background: white;
@@ -197,7 +192,6 @@
       color: midnightblue;
     }
 
-    /* FOOTER - SAMA UNTUK SEMUA HALAMAN */
     footer {
       background: darkslategray;
       color: white;
@@ -252,7 +246,6 @@
       opacity: 0.8;
     }
 
-    /* RESPONSIVE */
     @media(max-width: 1100px) {
       .footer-container {
         flex-direction: column;
@@ -261,59 +254,26 @@
     }
 
     @media(max-width: 900px) {
-      header {
-        padding: 18px 25px;
+      header { padding: 18px 25px; }
+      nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+      .kuliner-item, .kuliner-item.reverse {
+        flex-direction: column; text-align: center; gap: 25px;
       }
-      
-      nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      
-      .kuliner-item,
-      .kuliner-item.reverse {
-        flex-direction: column;
-        text-align: center;
-        gap: 25px;
-      }
-
-      .kuliner-item img {
-        width: 90%;
-        height: 240px;
-      }
-
-      .keterangan { 
-        width: 100%; 
-      }
-
-      .keterangan h2:after {
-        left: 50%;
-        transform: translateX(-50%);
-      }
+      .kuliner-item img { width: 90%; height: 240px; }
+      .keterangan { width: 100%; }
+      .keterangan h2:after { left: 50%; transform: translateX(-50%); }
     }
 
     @media(max-width: 480px) {
-      header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-      }
-      
-      h1 {
-        font-size: 32px;
-      }
-      
-      .subtitle {
-        font-size: 16px;
-      }
+      header { flex-direction: column; gap: 15px; padding: 15px 20px; }
+      h1 { font-size: 32px; }
+      .subtitle { font-size: 16px; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="logo">BANDA NEIRA</div>
     <nav>
@@ -328,18 +288,15 @@
   </header>
 
   <main>
-
     <h1>Kuliner Khas Banda Neira</h1>
     <p class="subtitle">Jelajahi cita rasa autentik kepulauan rempah Indonesia melalui hidangan tradisional yang menggugah selera</p>
 
     <!-- 1. Olahan Pala -->
     <div class="kuliner-item">
-      <img src="img/pala.jpg" alt="Olahan Pala">
+      <img src="pala.jpg" alt="Olahan Pala">
       <div class="keterangan">
         <h2>Olahan Pala</h2>
-
         <p>Olahan pala Banda Neira memanfaatkan buah pala untuk hidangan manisan, sirup, dan bumbu khas.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Banda Neira<br>
@@ -347,7 +304,6 @@
           • Tingkat pedas: Tidak pedas<br>
           • Disajikan dengan: Teh hangat atau makanan manis
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Pada abad ke-17, pala Banda menjadi komoditas paling dicari di dunia!
         </div>
@@ -356,12 +312,10 @@
 
     <!-- 2. Ikan Kuah Kuning -->
     <div class="kuliner-item reverse">
-      <img src="img/ikankuah banda.jpg" alt="Ikan Kuah Kuning">
+      <img src="ikankuahbanda.jpg" alt="Ikan Kuah Kuning">
       <div class="keterangan">
         <h2>Ikan Kuah Kuning</h2>
-
         <p>Hidangan ikan segar dengan kuah kuning berbumbu khas rempah Maluku.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Banda Neira<br>
@@ -369,7 +323,6 @@
           • Tingkat pedas: Sedang<br>
           • Disajikan dengan: Papeda atau nasi putih
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Warna kuningnya berasal dari kunyit asli Maluku yang aromanya sangat kuat.
         </div>
@@ -378,12 +331,10 @@
 
     <!-- 3. Ikan Bakar Rica -->
     <div class="kuliner-item">
-      <img src="img/ikanbakarbanda.webp" alt="Ikan Bakar Rica-Rica">
+      <img src="ikanbakarbanda.webp" alt="Ikan Bakar Rica-Rica">
       <div class="keterangan">
         <h2>Ikan Bakar Rica-Rica</h2>
-
         <p>Ikan bakar pedas dengan cita rasa khas Maluku.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Banda<br>
@@ -391,7 +342,6 @@
           • Tingkat pedas: Tinggi<br>
           • Disajikan dengan: Dabu-dabu atau nasi putih
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Bumbu rica-rica Banda memakai cabai lokal yang aromanya lebih harum.
         </div>
@@ -400,12 +350,10 @@
 
     <!-- 4. Papeda -->
     <div class="kuliner-item reverse">
-      <img src="img/papedabanda.jpg" alt="Papeda Banda">
+      <img src="papedabanda.jpg" alt="Papeda Banda">
       <div class="keterangan">
         <h2>Papeda Banda</h2>
-
         <p>Makanan tradisional dari sagu, disajikan bersama kuah ikan kuning.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Maluku<br>
@@ -413,7 +361,6 @@
           • Tingkat pedas: Tidak pedas<br>
           • Disajikan dengan: Ikan kuah kuning
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Papeda dimakan dengan cara "diseruput", bukan menggunakan sendok biasa.
         </div>
@@ -422,12 +369,10 @@
 
     <!-- 5. Roti Kelapa -->
     <div class="kuliner-item">
-      <img src="img/rotikelapabanda.jpg" alt="Roti Kelapa Banda">
+      <img src="rotikelapabanda.jpg" alt="Roti Kelapa Banda">
       <div class="keterangan">
         <h2>Roti Kelapa Banda</h2>
-
         <p>Roti manis dengan aroma kelapa segar khas Banda Neira.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Banda Neira<br>
@@ -435,7 +380,6 @@
           • Tingkat pedas: Tidak pedas<br>
           • Disajikan dengan: Kopi atau teh
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Banyak warung lokal membuat roti kelapa dengan resep turun-temurun.
         </div>
@@ -444,12 +388,10 @@
 
     <!-- 6. Kopi Rempah -->
     <div class="kuliner-item reverse">
-      <img src="img/kopirempahbanda.avif" alt="Kopi Rempah Banda">
+      <img src="kopirempahbanda.avif" alt="Kopi Rempah Banda">
       <div class="keterangan">
         <h2>Kopi Rempah Banda</h2>
-
         <p>Kopi khas yang dicampur pala, cengkeh, dan kayu manis.</p>
-
         <div class="info-box">
           <strong>Info Tambahan:</strong><br>
           • Asal: Banda Neira<br>
@@ -457,14 +399,12 @@
           • Tingkat pedas: Tidak pedas<br>
           • Disajikan dengan: Roti kelapa
         </div>
-
         <div class="funfact">
           🔸 <em>Fun Fact:</em> Aromanya terkenal menghangatkan badan di malam hari.
         </div>
       </div>
     </div>
 
-    <!-- TIPS -->
     <div class="tips-section">
       <h2>Tips Buat Wisatawan</h2>
       <ul>
@@ -477,7 +417,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
